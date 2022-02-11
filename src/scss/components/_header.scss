@@ -1,2 +1,24 @@
 @import "vars";
 
+.header {
+  padding: 15px 0;
+  height: var(--header-width);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 0 20px;
+  }
+
+  &__link {
+    font-size: 17px;
+    color: var(--text-black);
+  }
+}
