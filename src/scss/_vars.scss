@@ -6,7 +6,9 @@
   --content-width: 1566px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --header-width: 75px;
 
   // colors
   --light-color: #fff;
+  --text-black: #222;
 }

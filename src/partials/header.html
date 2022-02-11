@@ -1,11 +1,35 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav" title="">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link"></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"></a></li>
-        <li class="nav__item"><a href="#" class="nav__link"></a></li>
+  <div class="container header__container">
+    <div class="header__logo">
+      <picture class="header__picture">
+        <source srcset="./../img/logo.avif" type="image/avif">
+        <source srcset="./../img/logo.webp" type="image/webp">
+        <img loading="lazy" src="./../img/logo.png" class="image" width="" height="" alt="">
+      </picture>
+    </div>
+    <nav class="header__nav" title="Навигация по сайту">
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+        <li class="header__item"><a href="#" class="header__link">About</a></li>
+        <li class="header__item"><a href="#" class="header__link">Shop</a></li>
+        <li class="header__item"><a href="#" class="header__link">Gallery</a></li>
+        <li class="header__item"><a href="#" class="header__link">Message</a></li>
+        <li class="header__item"><a href="#" class="header__link">Blogs</a></li>
       </ul>
     </nav>
+    <div class="header_btns">
+      <aside class="header__serach">
+        <input type="search" name="search" id="search">
+        <button type="submit" class="header__btn btn" id="search_btn" aria-label="Кпнока поиска по сайту">
+          <img loading="lazy" src="./../img/search.svg" class="image" width="17" height="17" alt="Иконка поиска">
+        </button>
+      </aside>
+      <button type="button" class="header__btn btn" aria-label="Кнопка перехода в wish list">
+        <img loading="lazy" src="./../img/heart.svg" class="image" width="17" height="17" alt="Иконка сердца">
+      </button>
+      <button type="button" class="header__btn btn" aria-label="Кнопка перехода в корзину">
+        <img loading="lazy" src="./../img/basket.svg" class="image" width="17" height="17" alt="Иконка корзины">
+      </button>
+    </div>
   </div>
 </header>
