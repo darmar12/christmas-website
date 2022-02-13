@@ -14,11 +14,65 @@
   &__list {
     list-style: none;
     display: flex;
-    gap: 0 20px;
+    gap: 0 23px;
   }
 
   &__link {
     font-size: 17px;
     color: var(--text-black);
   }
+
+  &__link:hover {
+    color: var(--text-red);
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-red);
+    border-radius: 30px;
+
+    input {
+      width: 300px;
+      border: none;
+      border-radius: 30px 0 0 30px;
+      outline: none;
+      padding: 0 0 0 15px;
+      caret-color: var(--text-red);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-red);
+    }
+  }
+
+  &__btn {
+    width: 35px;
+    height: 35px;
+    background-color: var(--text-grey);
+    position: relative;
+    transition: all .3s linear;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .3s linear;
+    }
+  }
+
+  &__btn:hover {
+    background-color: var(--text-red);
+  }
+}
+
+.search_btn {
+  background-color: transparent;
+  border-radius: 50%;
 }
