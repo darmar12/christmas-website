@@ -1,12 +1,22 @@
 .offer{
   display: flex;
-  background-image: url(../../img/banner-bg.png);
-  background-size: cover;
-  background-position: center;
+  position: relative;
 
+
+  picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    max-height: 500px;
+  }
 
   &__container {
-    display: flex;
+  display: flex;
+  width: 91%;
+  align-items: flex-start;
   }
 
   &__content{
@@ -18,22 +28,27 @@
   background: #fff;
   margin: 100px 0;
   padding: 20px;
+  border: 1px solid #666;
   }
 
   &__suptitle {
     font-size: 20px;
     color: #e60000;
+    margin: 10px 0;
   }
 
   &__title {
     font-size: 30px;
     color: #222;
+    margin: 10px 0;
   }
 
   &__text {
     font-size: 14px;
     color: #666;
     line-height: 2;
+    margin: 10px 0;
+    text-align: center;
   }
 
   &__btn {
@@ -45,6 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px 0;
   }
 
 }
