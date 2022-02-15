@@ -1,0 +1,50 @@
+.offer{
+  display: flex;
+  background-image: url(../../img/banner-bg.png);
+  background-size: cover;
+  background-position: center;
+
+
+  &__container {
+    display: flex;
+  }
+
+  &__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  background: #fff;
+  margin: 100px 0;
+  padding: 20px;
+  }
+
+  &__suptitle {
+    font-size: 20px;
+    color: #e60000;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: #222;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #666;
+    line-height: 2;
+  }
+
+  &__btn {
+    padding: 12px 30px 10px;
+    background: #e60000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
